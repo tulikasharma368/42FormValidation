@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <form>
+        <header class="headerContainer">HTML 5 form input fields</header>
+        <div>
+            <label for="text">Type input for name: </label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="pwd">Enter password: </label>
+            <input type="password" id="pwd" name="pwd">
+            <error-output class="password-error" for="pwd"></error-output>
+        </div>
+        <div>
+            <label for="email">Enter email: </label>
+            <input type="email" id="email" name="email">
+            <error-output class="email-error" for="email"></error-output>
+        </div>
+        <div>
+            <label for="url">Enter url: </label>
+            <input type="url" id="url" name="url">
+        </div>
+        <div>
+            <label for="number">Number: </label>
+            <input type="number" id="number" name="number">
+        </div>
+        <div>
+            <label for="tel">Telephone Number: </label>
+            <input type="tel" id="tel" name="tel" required>
+            <error-output class="tel-error" for="tel"></error-output>
+        </div>
+        <div>
+            <label for="search">Search input type: </label>
+            <input type="search" id="search" name="search">
+        </div>
+        <div class="nativeDateTimePicker">
+            <label for="party">Choose date and time: </label>
+            <input type="datetime-local" id="party" name="bday">
+            <span class="validity"></span>
+        </div>
+        <div>
+            <label for="salary">Salary:</label>
+            <input type="range" name="salary" id="salary" min="30000" max="50000" step="100" value="40000">
+            <output class="output-class" for="salary">40000</output>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="/js/form.js"></script>
+</body>
+</html>
